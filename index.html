@@ -30,7 +30,8 @@
         <!-- menu  content -->
         <div class="menu-content">
             <!-- navbar -->
-            <ul class="navbar-menu">
+            <ul class="navbar-menu" id="nav_menu">
+                <button class="close-nav" id="close_nav"><i class="mdi mdi-close"></i></button>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Features</a></li>
                 <li><a href="#">Pricing</a></li>
@@ -39,13 +40,33 @@
                 <li><a href="#">Register</a></li>
             </ul>
             <!-- navbar -->
+
+            <div class="nav-open-btn" id="open_nav">
+                <i class="mdi mdi-format-align-justify"></i>
+            </div>
         </div>
         <!-- menu  content -->
 
 
     </div>
     <!-- header wrapper  start -->
+<script>
+var body = document.querySelector("body");
+var nav_open_btn = document.getElementById("open_nav");
+var close_nav = document.getElementById("close_nav");
+var nav_menu = document.getElementById("nav_menu");
 
+
+nav_open_btn.addEventListener("click", ()=>{
+    nav_menu.style.display = "block";
+});
+
+close_nav.addEventListener("click", ()=>{
+    nav_menu.style.display = "none";
+});
+
+
+</script>
 
     <!-- main content wrapper start -->
     <div class="main-content-wrapper">
@@ -70,7 +91,7 @@
 
                 <div class="content-section row d-flex justify-content-between">
                     <!--section content -->
-                    <div class="section-left-content">
+                    <div class="section-left-content col-6">
                         <h2>Yebidy Premium Website Builder</h2>
                         <p>Create a website that you are going be proud of. Use the Yebidy Website Builder and build your premium website today.</p>
                         <button class="btn-orange-large">TRY LIVE DEMO</button>
@@ -95,7 +116,7 @@
                     <!--section content -->
 
                     <!-- service image -->
-                    <div class="service-img">
+                    <div class="service-img col-6">
                         <img src="./assets/imgs/services/main-fbrowser.png" alt="">
                     </div>
                     <!-- service image -->
@@ -104,8 +125,223 @@
             </div>
         <!-- try demo section -->
 
+        <!-- about  features section -->
+            <div class="row d-flex justify-content-center bg-black p-15">
+                <div class="col-3">
+                    <h4 class="text-white">Scalable on Devices</h4>
+                    <h2 class="text-primary">Responsive Website</h2>
+                    <p class="text-white">Create your website using our online web builder. Select from a huge range of pre built modules and add your own content. Add text, images and videos to your web pages and engage your target audience. With no coding required the options are endless.</p>
+                </div>
+                <div class="col-3">
+                    <h4 class="text-white">Smartly Coded & Maintained</h4>
+                    <h2 class="text-primary">Advanced Functionality</h2>
+                    <p  class="text-white">Whether you are creating a personal website or a business website, select from a range of personal configurations. Build a personal portfolio, or setup a information or brochure website, Yebidy is suitable for all types of websites.</p>
+                </div>
+                <div class="col-3">
+                    <h4 class="text-white">Flexible & Customisable</h4>
+                    <h2 class="text-primary">Truly Multi-Purpose</h2>
+                    <p class="text-white">CUse our built in promotional tools and increase your websites exposure. Create a online presence and grow your business. Establish your website on major search engines such as Google and increase your customer base and sales.</p>
+                </div>
+            </div>
+        <!-- about  features section -->
+
+
+        <!-- benifits section -->
+        <div class="benifits-section">
+            <div class="section-header">
+                <h2 class='text-dark'>Benefits of creating a website with Yebidy</h2>
+                <p class="text-dark">Creating your website with Yebidy comes with a whole host of benefits.</p>
+            </div>
+
+            <div class="row d-flex  justify-content-center">
+
+                <div class="col-3 col-md-6 md-flex-content-center-column">
+                    
+                    <!-- single section -->
+                    <div class="single-section left-section">
+                            <div class="left-section-content">
+                                    <h3 class="text-dark">Responsive Design</h3>
+                                    <p class="text-dark"><small>Your website will be designed to adapt and fit to any screen your end user may be using giving them the best experience when using your website.</small></p>
+                            </div>
+                            <div class="check-ico-rounded"><i class="mdi mdi-check"></i></div>
+                            
+                    </div>
+                    <!-- single section -->
+                    <!-- single section -->
+                    <div class="single-section left-section">
+                            <div class="left-section-content">
+                                    <h3 class="text-dark">Multiple Colour Schemes</h3>
+                                    <p class="text-dark"><small> Change the colour of your website quickly and easily by choosing from a wide variety of colour schemes.</small></p>
+                            </div>
+                            <div class="check-ico-rounded"><i class="mdi mdi-check"></i></div>
+                            
+                    </div>
+                    <!-- single section -->
+                    <!-- single section -->
+                    <div class="single-section left-section">
+                            <div class="left-section-content">
+                                    <h3 class="text-dark">Boxed & Wide Layouts</h3>
+                                    <p class="text-dark"><small> You have the option of stretching your website to fit the full width of the screen or you can select a boxed style to make your website nice and compact.</small></p>
+                            </div>
+                            <div class="check-ico-rounded"><i class="mdi mdi-check"></i></div>
+                            
+                    </div>
+                    <!-- single section -->
+                    
+                    
+
+                </div>
+
+                <div class="col-3 col-md-6 d-flex justify-content-center benifits-demo-img">
+                    <img src="./assets/imgs/services/iphone7.png" alt="">
+                </div>
+
+                <div class="col-3 col-md-6 md-flex-content-center-column">
+                    
+                        <!-- single section -->
+                        <div class="single-section right-section">
+                             <div class="check-ico-rounded"><i class="mdi mdi-check"></i></div>    
+                            <div class="right-section-content">
+                                        <h3 class="text-dark">Extensive Modules</h3>
+                                        <p class="text-dark"><small> Create the website you desire quickly and easily without any coding. Select the modules you require from our extensive range and build your website with ease.</small></p>
+                                </div>
+                                
+                        </div>
+                        <!-- single section -->
+                        <!-- single section -->
+                        <div class="single-section right-section">
+                                <div class="check-ico-rounded"><i class="mdi mdi-check"></i></div>    
+                               <div class="right-section-content">
+                                           <h3 class="text-dark">Search Engine Optimised</h3>
+                                           <p class="text-dark"><small> Your website will be search engine optimised which will help you establish your website on major search engines such as Google. </small></p>
+                                   </div>
+                                   
+                           </div>
+                           <!-- single section --><!-- single section -->
+                        <div class="single-section right-section">
+                                <div class="check-ico-rounded"><i class="mdi mdi-check"></i></div>    
+                               <div class="right-section-content">
+                                           <h3 class="text-dark">Extensive Support</h3>
+                                           <p class="text-dark"><small> We are hear to help you grow your website. We offer a range of support services and customisation services which can help you establish your web presence. </small></p>
+                                   </div>
+                                   
+                           </div>
+                           <!-- single section -->
+                    </div>
+
+                
+            </div>
+        </div>
+        <!-- benifits section -->
+
+
+        <!-- trial section -->
+        <div class="col-12 bg-black trial-section d-flex justify-content-center">
+
+            <div class="trial-section-content">
+                <div class="info">
+                        <h2><span class="text-white">Try the Yebidy website builder</span> <span class="text-primary">30 Day Free Trial</span></h2>
+                        <p class="light-weight text-white font-14">Build your premium website today and create a website that you are going be proud of.</p>
+                </div>
+                <button class="btn-orange-large">TRY FREE FOR 30 DAYS</button>
+            </div>
+
+        </div>
+        <!-- trial section -->
+
+        <!-- default setup -->
+        <div class="col-12 default-setup-section">
+                <div class="content-start">
+                        <div class="section-header">
+                                <h2 class='text-dark'>Default Setups</h2>
+                                <p class="text-dark">Choose from one of the following default setups to save time and then just customise the content.</p>
+                        </div>
+                    
+                    <div class="row col-12  d-flex justify-content-center">
+
+                        <!-- single setup details -->
+                        <div class="col-3 single-setup-details">
+                            <div class="ico">
+                                <i class="mdi mdi-thumb-up"></i>
+                            </div>
+                            <h3 class="text-dark mb-0">Personal Website</h3>
+                            <p class="text-dark"><small>A personal website with a personal touch. Showcase your skills and services.</small></p>
+                        </div>
+                        <!-- single setup details -->
+
+                        <!-- single setup details -->
+                        <div class="col-3 single-setup-details">
+                                <div class="ico">
+                                    <i class="mdi mdi-thumb-up"></i>
+                                </div>
+                                <h3 class="text-dark mb-0">Portfolio Website</h3>
+                                <p class="text-dark"><small>Showcase your latest works to hundreds of potential clients.</small></p>
+                            </div>
+                            <!-- single setup details -->
+
+                            <!-- single setup details -->
+                        <div class="col-3 single-setup-details">
+                                <div class="ico">
+                                    <i class="mdi mdi-thumb-up"></i>
+                                </div>
+                                <h3 class="text-dark mb-0">Corporate Website</h3>
+                                <p class="text-dark"><small>Suitable for businesses who wish to display information about their company.</small></p>
+                            </div>
+                            <!-- single setup details -->
+
+                    </div>
+                    <div class="row col-12  d-flex justify-content-center">
+
+                            <!-- single setup details -->
+                            <div class="col-3 single-setup-details">
+                                <div class="ico">
+                                    <i class="mdi mdi-thumb-up"></i>
+                                </div>
+                                <h3 class="text-dark mb-0">Restaurant Website</h3>
+                                <p class="text-dark"><small>Display your menu and let your customers reserve tables online.</small></p>
+                            </div>
+                            <!-- single setup details -->
+    
+                            <!-- single setup details -->
+                            <div class="col-3 single-setup-details">
+                                    <div class="ico">
+                                        <i class="mdi mdi-thumb-up"></i>
+                                    </div>
+                                    <h3 class="text-dark mb-0">Information Website</h3>
+                                    <p class="text-dark"><small>Perfect for displaying information about a certain topic.</small></p>
+                                </div>
+                                <!-- single setup details -->
+    
+                                <!-- single setup details -->
+                            <div class="col-3 single-setup-details">
+                                    <div class="ico">
+                                        <i class="mdi mdi-thumb-up"></i>
+                                    </div>
+                                    <h3 class="text-dark mb-0">Brochure Website</h3>
+                                    <p class="text-dark"><small>Display your products and services to a online audience.</small></p>
+                                </div>
+                                <!-- single setup details -->
+    
+                        </div>
+
+                </div>
+        </div>
+        <!-- default setup -->
+
     </div>
     <!-- main content wrapper start -->
+
+
+    <!-- footer  wrapper -->
+    <div class="footer-wrapper col-12">
+        <div class="content-section d-flex justify-content-between">
+            <div class="copyright-text">
+                <p class="ctxt">Copyright © 2021 Yebidy.com. All Rights Reserved</p>
+                <p><a href="#" class="ctxt">Terms & Conditions</a> / <a href="#" class="ctxt">Privacy Policy</a> </p>
+            </div>
+        </div>
+    </div>
+    <!-- footer  wrapper -->
 
 
 </body>
